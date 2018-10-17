@@ -16,7 +16,7 @@ export default {
       icon: 'fa fa-th-list',
       badge: {
                   variant: 'info',
-                  text: '27',
+                  text: '10',
                 }
     },
     {

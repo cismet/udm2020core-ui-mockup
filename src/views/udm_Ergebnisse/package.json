@@ -2,5 +2,5 @@
   "name": "Ergebnisse",
   "version": "0.0.0",
   "private": true,
-  "main": "./Users.js"
+  "main": "./Results.js"
 }
