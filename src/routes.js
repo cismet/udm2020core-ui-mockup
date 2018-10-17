@@ -7,6 +7,23 @@ function Loading() {
   return <div>Loading...</div>;
 }
 
+const Recherche = Loadable({
+  loader: () => import('./views/udm_Recherche'),
+  loading: Loading,
+});
+const Ergebnisse = Loadable({
+  loader: () => import('./views/udm_Ergebnisse'),
+  loading: Loading,
+});
+const Auswertung = Loadable({
+  loader: () => import('./views/udm_Auswertung'),
+  loading: Loading,
+});
+const Protokoll = Loadable({
+  loader: () => import('./views/udm_Protokoll'),
+  loading: Loading,
+});
+
 const Breadcrumbs = Loadable({
   loader: () => import('./views/Base/Breadcrumbs'),
   loading: Loading,
@@ -186,8 +203,14 @@ const User = Loadable({
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
-  { path: '/', exact: true, name: 'Home', component: DefaultLayout },
-  { path: '/dashboard', name: 'Dashboard', component: Dashboard },
+  { path: '/', exact: true, name: '', component: DefaultLayout },
+  { path: '/recherche', name: 'Recherche', component: Recherche },
+  { path: '/ergebnisse', name: 'Ergebnisse', component: Ergebnisse },
+  { path: '/auswertung', name: 'Auswertung', component: Auswertung },
+  { path: '/protokoll', name: 'Protokoll', component: Protokoll },
+
+
+
   { path: '/theme', exact: true, name: 'Theme', component: Colors },
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },

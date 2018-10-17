@@ -3,8 +3,8 @@ import { Badge, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem, NavLin
 import PropTypes from 'prop-types';
 
 import { AppAsideToggler, AppHeaderDropdown, AppNavbarBrand, AppSidebarToggler } from '@coreui/react';
-import logo from '../../assets/img/brand/logo.svg'
-import sygnet from '../../assets/img/brand/sygnet.svg'
+import logo from '../../assets/img/brand/udm2020_logo.svg'
+import minLogo from '../../assets/img/brand/uba_logo_min.svg'
 
 const propTypes = {
   children: PropTypes.node,
@@ -22,20 +22,24 @@ class DefaultHeader extends Component {
       <React.Fragment>
         <AppSidebarToggler className="d-lg-none" display="md" mobile />
         <AppNavbarBrand
-          full={{ src: logo, width: 89, height: 25, alt: 'CoreUI Logo' }}
-          minimized={{ src: sygnet, width: 30, height: 30, alt: 'CoreUI Logo' }}
-        />
+          full={{ src: logo, height: 35, alt: 'UIM2020 Logo' }}
+          minimized={{ src: minLogo, width: 30, height: 30, alt: 'UIM2020 Logo' }}
+        >
+        </AppNavbarBrand>
         <AppSidebarToggler className="d-md-down-none" display="lg" />
 
         <Nav className="d-md-down-none" navbar>
-          <NavItem className="px-3">
-            <NavLink href="/">Dashboard</NavLink>
+        <NavItem className="px-3">
+            <NavLink href="#/recherche">Recherche</NavLink>
           </NavItem>
           <NavItem className="px-3">
-            <NavLink href="#/users">Users</NavLink>
+            <NavLink href="#/ergebnisse">Ergebnisse</NavLink>
           </NavItem>
           <NavItem className="px-3">
-            <NavLink href="#">Settings</NavLink>
+            <NavLink href="#/auswertung">Auswertung</NavLink>
+          </NavItem>
+          <NavItem className="px-3">
+            <NavLink href="#/protokoll">Protokoll</NavLink>
           </NavItem>
         </Nav>
         <Nav className="ml-auto" navbar>
