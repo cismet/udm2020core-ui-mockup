@@ -79,7 +79,7 @@ function ResultRow(props) {
   )
 }
 
-class Users extends Component {
+class Merkliste extends Component {
 
   constructor(props) {
     super(props);
@@ -252,4 +252,4 @@ class Users extends Component {
   }
 }
 
-export default Users;
+export default Merkliste;

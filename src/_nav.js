@@ -11,8 +11,8 @@ export default {
       icon: 'fa fa-search',
     },
     {
-      name: 'Ergebnisse',
-      url: '/ergebnisse',
+      name: 'Merkliste',
+      url: '/merkliste',
       icon: 'fa fa-th-list',
       badge: {
                   variant: 'info',
@@ -23,6 +23,7 @@ export default {
       name: 'Auswertung',
       url: '/auswertung',
       icon: 'icon-pie-chart',
+            
     },
     {
       name: 'Protokoll',

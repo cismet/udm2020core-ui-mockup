@@ -1,0 +1,10 @@
+{
+  "version": "v1",
+  "packages": {
+    "react-cismap": {
+      "signature": "8ed24dec03a8e451d4e6d16b85acd22d",
+      "file": true,
+      "replaced": "^0.0.14"
+    }
+  }
+}

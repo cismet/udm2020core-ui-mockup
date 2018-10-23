@@ -8,11 +8,11 @@ function Loading() {
 }
 
 const Recherche = Loadable({
-  loader: () => import('./views/udm_Recherche'),
+  loader: () => import('./views/udm_Recherche/'),
   loading: Loading,
 });
-const Ergebnisse = Loadable({
-  loader: () => import('./views/udm_Ergebnisse'),
+const Merkliste = Loadable({
+  loader: () => import('./views/udm_Merkliste'),
   loading: Loading,
 });
 const Auswertung = Loadable({
@@ -205,7 +205,7 @@ const User = Loadable({
 const routes = [
   { path: '/', exact: true, name: '', component: DefaultLayout },
   { path: '/recherche', name: 'Recherche', component: Recherche },
-  { path: '/ergebnisse', name: 'Ergebnisse', component: Ergebnisse },
+  { path: '/merkliste', name: 'Merkliste', component: Merkliste },
   { path: '/auswertung', name: 'Auswertung', component: Auswertung },
   { path: '/protokoll', name: 'Protokoll', component: Protokoll },
 
