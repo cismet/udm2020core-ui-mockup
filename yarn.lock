@@ -8342,10 +8342,10 @@ react-chartjs-2@^2.7.2:
     lodash "^4.17.4"
     prop-types "^15.5.8"
 
-react-cismap@^0.0.14:
-  version "0.0.14"
-  resolved "https://registry.yarnpkg.com/react-cismap/-/react-cismap-0.0.14.tgz#6000783384791b52c39d15def98a8e4203280300"
-  integrity sha512-wTOaWYV5VcNX0W6oDKXsg5HxO47DEX2+EUq0VsD5kLVjZpsZfYxHiroqHyyuiCBmPPRm+mt3Zw3QUz0f7dJPlQ==
+react-cismap@^0.0.15:
+  version "0.0.15"
+  resolved "https://registry.yarnpkg.com/react-cismap/-/react-cismap-0.0.15.tgz#5440b491cb5ff5fa537965d90277927bdc167e81"
+  integrity sha512-cMB2EJ3FVH3r9YBlVPFrJDMpFzWYjloPvpNcZnPzPEGP4ADs432AZ6h3gAymBcAGfj2/7d0HwYLAgXw6HLQfSw==
   dependencies:
     "@turf/bbox-polygon" "^6.0.1"
     "@turf/intersect" "^6.1.3"
