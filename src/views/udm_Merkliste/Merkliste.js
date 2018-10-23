@@ -16,7 +16,8 @@ import {Link} from "react-scroll";
 import {Map, TileLayer, ZoomControl} from "react-leaflet";
 import usersData from './ResultsData'
 import "leaflet/dist/leaflet.css"
-import {FullscreenControl, LocateControl} from "react-cismap";
+import {FullscreenControl, LocateControl, FeatureCollectionDisplay} from "react-cismap";
+import {tullnFC, pointsFC, tenPointsFC}from '../udm_Protokoll'
 import Scroll from "react-scroll"
 
 var scroll = Scroll.animateScroll;
@@ -99,7 +100,6 @@ class Merkliste extends Component {
     });
   }
   render() {
-    const position = [48.210033, 16.363449];
     const userList = usersData.filter((user) => user.id < 10)
     console.log(FullscreenControl)
 
@@ -178,7 +178,8 @@ class Merkliste extends Component {
                     style={{
                     height: 500
                   }}
-                    center={position}
+                    center={[48.356249029540734, 15.9136962890625
+                    ]}
                     zoom={10}
                     attributionControl={false}
                     zoomControl={false}>
@@ -207,6 +208,26 @@ class Merkliste extends Component {
                       popup: "Sie befinden sich im Umkreis von {distance} {unit} um diesen Punkt.",
                       outsideMapBoundsMsg: "Sie gefinden sich wahrscheinlich außerhalb der Kartengrenzen."
                     }}/>
+                     <FeatureCollectionDisplay
+        
+        featureCollection={tullnFC}
+        clusteringEnabled={false}
+        // style={getFeatureStyler(currentMarkerSize, getColorForProperties)}
+        style={()=>({color:"#4dbd74"})}
+        featureStylerScalableImageSize={30}
+        // mapRef={this.leafletMap}
+        showMarkerCollection={false}
+      />
+      <FeatureCollectionDisplay
+        
+        featureCollection={tenPointsFC}
+        clusteringEnabled={false}
+        // style={getFeatureStyler(currentMarkerSize, getColorForProperties)}
+        style={()=>({color:'#902A1F'})}
+        featureStylerScalableImageSize={30}
+        // mapRef={this.leafletMap}
+        showMarkerCollection={false}
+      />
                   </Map>
                 </CardBody>
                 <CardHeader>

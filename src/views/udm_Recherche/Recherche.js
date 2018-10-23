@@ -27,7 +27,8 @@ import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
 import { getStyle, hexToRgba } from '@coreui/coreui/dist/js/coreui-utilities'
 import { AppSwitch } from '@coreui/react'
 import {Map, TileLayer, ZoomControl} from "react-leaflet";
-import {FullscreenControl, LocateControl} from "react-cismap";
+import {FullscreenControl, LocateControl, FeatureCollectionDisplay} from "react-cismap";
+import {tullnFC}from '../udm_Protokoll'
 import "leaflet/dist/leaflet.css"
 
 const brandPrimary = getStyle('--primary')
@@ -258,8 +259,9 @@ class Dashboard extends Component {
                     style={{
                     height: window.innerHeight-470
                   }}
-                    center={position}
-                    zoom={10}
+                    center={[48.356249029540734, 15.9136962890625
+                    ]}
+                    zoom={9}
                     attributionControl={false}
                     zoomControl={false}>
                     <TileLayer
@@ -287,6 +289,16 @@ class Dashboard extends Component {
                       popup: "Sie befinden sich im Umkreis von {distance} {unit} um diesen Punkt.",
                       outsideMapBoundsMsg: "Sie gefinden sich wahrscheinlich außerhalb der Kartengrenzen."
                     }}/>
+                    <FeatureCollectionDisplay
+        
+        featureCollection={tullnFC}
+        clusteringEnabled={false}
+        // style={getFeatureStyler(currentMarkerSize, getColorForProperties)}
+        style={()=>({color:"#4dbd74"})}
+        featureStylerScalableImageSize={30}
+        // mapRef={this.leafletMap}
+        showMarkerCollection={false}
+      />
                   </Map>
 
               </CardBody>

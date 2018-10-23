@@ -261,7 +261,7 @@ class Dashboard extends Component {
 export default Dashboard;
 
 
-const tullnFC={
+export const tullnFC={
   "type": "FeatureCollection",
   "features": [
     {
@@ -410,7 +410,7 @@ const tullnFC={
   ]
 };
 
-const pointsFC={
+export const pointsFC={
   "type": "FeatureCollection",
   "features": [
     {
@@ -471,7 +471,7 @@ const pointsFC={
   ]
 };
 
-const manyPointsFC={
+export const manyPointsFC={
   "type": "FeatureCollection",
   "features": [
     {
@@ -859,5 +859,128 @@ const manyPointsFC={
         ]
       }
     }
+  ]
+};
+
+export const tenPointsFC={
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.455017089843748,
+          48.42646676081821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.481109619140625,
+          48.398208936781806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.542907714843748,
+          48.372672242291294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.659637451171873,
+          48.412795581099964
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.698089599609375,
+          48.40185599006367
+        ]
+      }
+    },
+ 
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.843658447265625,
+          48.353511312557394
+        ]
+      }
+    },
+    
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.19110107421875,
+          48.352598707539315
+        ]
+      }
+    },
+    
+   
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.044158935546875,
+          48.36537369040198
+        ]
+      }
+    },
+  
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.09222412109375,
+          48.30420725000317
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.979614257812498,
+          48.350773448467294
+        ]
+      }
+    },
+  
   ]
 };
