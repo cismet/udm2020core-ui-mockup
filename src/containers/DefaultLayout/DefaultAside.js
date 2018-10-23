@@ -65,36 +65,167 @@ class DefaultAside extends Component {
         <TabContent activeTab={this.state.activeTab}>
           <TabPane tabId="1">
             <ListGroup className="list-group-accent" tag={'div'}>
-              <ListGroupItem className="list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase small">Today</ListGroupItem>
-              <ListGroupItem action tag="a" href="#" className="list-group-item-accent-warning list-group-item-divider">
-                <div className="avatar float-right">
-                  <img className="img-avatar" src="assets/img/avatars/7.jpg" alt="admin@bootstrapmaster.com"></img>
+              <ListGroupItem className="list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase small">Recherche 1</ListGroupItem>
+              <ListGroupItem action tag="a" href="#/protokoll" className="list-group-item-accent-info list-group-item-divider">
+                <div className="avatar float-right">1
+                  <img className="img-avatar" src="assets/img/avatars/6.jpg" alt="admin@bootstrapmaster.com"></img>
                 </div>
-                <div>Meeting with <strong>Lucas</strong> </div>
+                <div>BORIS beinhaltet mehr als 1,5 Mio. Datensätze  </div>
                 <small className="text-muted mr-3">
-                  <i className="icon-calendar"></i>&nbsp; 1 - 3pm
-                </small>
-                <small className="text-muted">
-                  <i className="icon-location-pin"></i> Palo Alto, CA
+                  <i className="fa fa-comment"></i>&nbsp; 09:12
                 </small>
               </ListGroupItem>
-              <ListGroupItem action tag="a" href="#" className="list-group-item-accent-info list-group-item-divider">
+              <ListGroupItem action tag="a" href="#/protokoll" className="list-group-item-accent-success list-group-item-divider">
                 <div className="avatar float-right">
-                  <img className="img-avatar" src="assets/img/avatars/4.jpg" alt="admin@bootstrapmaster.com"></img>
+                  <img className="img-avatar" src="assets/img/avatars/6.jpg" alt="admin@bootstrapmaster.com"></img>
                 </div>
-                <div>Skype with <strong>Megan</strong></div>
+                <div>Tullner Feld</div>
                 <small className="text-muted mr-3">
-                  <i className="icon-calendar"></i>&nbsp; 4 - 5pm
+                  <i className="fa fa-map"></i>&nbsp; 09:20
                 </small>
-                <small className="text-muted">
-                  <i className="icon-social-skype"></i> On-line
+              
+              </ListGroupItem>
+              <ListGroupItem action tag="a" href="#/protokoll" className="list-group-item-accent-info list-group-item-divider">
+                <div className="avatar float-right">
+                  <img className="img-avatar" src="assets/img/avatars/6.jpg" alt="admin@bootstrapmaster.com"></img>
+                </div>
+                <div>Neues GIS</div>
+                <small className="text-muted mr-3">
+                  <i className="fa fa-comment"></i>&nbsp; 09:22
                 </small>
               </ListGroupItem>
-              <ListGroupItem className="list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase small">Tomorrow</ListGroupItem>
-              <ListGroupItem action tag="a" href="#" className="list-group-item-accent-danger list-group-item-divider">
-                <div>New UI Project - <strong>deadline</strong></div>
-                <small className="text-muted mr-3"><i className="icon-calendar"></i>&nbsp; 10 - 11pm</small>
-                <small className="text-muted"><i className="icon-home"></i>&nbsp; creativeLabs HQ</small>
+              <ListGroupItem action tag="a" href="#/protokoll" className="list-group-item-accent-success list-group-item-divider">
+                <div className="avatar float-right">
+                  <img className="img-avatar" src="assets/img/avatars/6.jpg" alt="admin@bootstrapmaster.com"></img>
+                </div>
+                <div>Suche nach EPRTR</div>
+                <small className="text-muted mr-3">
+                  <i className="fa fa-search"></i>&nbsp; 09:30
+                </small> 
+                <small className="text-muted mr-3">
+                  <i className="fa fa-list"></i>&nbsp; 7 Treffer
+                </small>
+              
+              </ListGroupItem>
+              <ListGroupItem action tag="a" href="#/protokoll" className="list-group-item-accent-warning list-group-item-divider">
+                <div className="avatar float-right">
+                  <img className="img-avatar" src="assets/img/avatars/6.jpg" alt="admin@bootstrapmaster.com"></img>
+                </div>
+                <div>Einschränken der Treffermenge</div>
+                <small className="text-muted mr-3">
+                  <i className="fa fa-filter"></i>&nbsp; 09:32
+                </small>
+                <small className="text-muted mr-3">
+                  <i className="fa fa-list"></i>&nbsp; 4 Ergebnisse
+                </small>
+              
+              </ListGroupItem>
+              <ListGroupItem action tag="a" href="#/protokoll" className="list-group-item-accent-warning list-group-item-divider">
+                <div className="avatar float-right">
+                  <img className="img-avatar" src="assets/img/avatars/6.jpg" alt="admin@bootstrapmaster.com"></img>
+                </div>
+                <div>Einschränken der Treffermenge</div>
+                <small className="text-muted mr-3">
+                  <i className="fa fa-filter"></i>&nbsp; 09:36
+                </small>
+                <small className="text-muted mr-3">
+                  <i className="fa fa-list"></i>&nbsp; 3 Ergebnisse
+                </small>
+              
+              </ListGroupItem>
+
+
+               <ListGroupItem action tag="a" href="#/protokoll" className="list-group-item-accent-info list-group-item-divider">
+                <div className="avatar float-right">
+                  <img className="img-avatar" src="assets/img/avatars/6.jpg" alt="admin@bootstrapmaster.com"></img>
+                </div>
+                <div>Bodendatenportal</div>
+                <small className="text-muted mr-3">
+                  <i className="fa fa-comment"></i>&nbsp; 09:40
+                </small>
+              </ListGroupItem>
+              <ListGroupItem action tag="a" href="#/protokoll" className="list-group-item-accent-success list-group-item-divider">
+                <div className="avatar float-right">
+                  <img className="img-avatar" src="assets/img/avatars/6.jpg" alt="admin@bootstrapmaster.com"></img>
+                </div>
+                <div>Suche nach Bodenmessstellen</div>
+                <small className="text-muted mr-3">
+                  <i className="fa fa-search"></i>&nbsp; 09:45
+                </small> 
+                <small className="text-muted mr-3">
+                  <i className="fa fa-list"></i>&nbsp; 35 Treffer
+                </small>
+              
+              </ListGroupItem>
+              <ListGroupItem action tag="a" href="#/protokoll" className="list-group-item-accent-warning list-group-item-divider">
+                <div className="avatar float-right">
+                  <img className="img-avatar" src="assets/img/avatars/6.jpg" alt="admin@bootstrapmaster.com"></img>
+                </div>
+                <div>Filtern nach Zeit</div>
+                <small className="text-muted mr-3">
+                  <i className="fa fa-filter"></i>&nbsp; 09:50
+                </small>
+                <small className="text-muted mr-3">
+                  <i className="fa fa-list"></i>&nbsp; 12 Ergebnisse
+                </small>
+              
+              </ListGroupItem>
+              <ListGroupItem action tag="a" href="#/protokoll" className="list-group-item-accent-warning list-group-item-divider">
+                <div className="avatar float-right">
+                  <img className="img-avatar" src="assets/img/avatars/6.jpg" alt="admin@bootstrapmaster.com"></img>
+                </div>
+                <div>Filtern nach Schadstoffen</div>
+                <small className="text-muted mr-3">
+                  <i className="fa fa-filter"></i>&nbsp; 09:55
+                </small>
+                <small className="text-muted mr-3">
+                  <i className="fa fa-list"></i>&nbsp; 10 Ergebnisse
+                </small>
+              
+              </ListGroupItem>
+
+<ListGroupItem action tag="a" href="#/protokoll" className="list-group-item-accent-success list-group-item-divider">
+                <div className="avatar float-right">
+                  <img className="img-avatar" src="assets/img/avatars/6.jpg" alt="admin@bootstrapmaster.com"></img>
+                </div>
+                <div>Kooperation mit BMLFUW</div>
+                <small className="text-muted mr-3">
+                  <i className="fa fa-comment"></i>&nbsp; 10:00
+                </small>
+              </ListGroupItem>
+
+<ListGroupItem action tag="a" href="#/protokoll" className="list-group-item-accent-danger list-group-item-divider">
+                <div className="avatar float-right">
+                  <img className="img-avatar" src="assets/img/avatars/6.jpg" alt="admin@bootstrapmaster.com"></img>
+                </div>
+                <div>Export nach Excel</div>
+                <small className="text-muted mr-3">
+                  <i className="fa fa-file"></i>&nbsp; 10:10
+                </small>
+                <small className="text-muted mr-3">
+                  <i className="icon-settings"></i>&nbsp; 4 Parameter
+                </small>
+              </ListGroupItem>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <ListGroupItem className="list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase small">Kommentare</ListGroupItem>
+              <ListGroupItem action tag="a" href="#/protokoll" className="list-group-item-accent-success list-group-item-divider">
+                <div>Erweiterung der Ausgangsgeometrie</div>
+                <small className="text-muted mr-3"><i className="icon-calendar"></i>&nbsp; 10:00 - 11:45</small>
                 <div className="avatars-stack mt-2">
                   <div className="avatar avatar-xs">
                     <img src={'assets/img/avatars/2.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com" />
@@ -113,15 +244,9 @@ class DefaultAside extends Component {
                   </div>
                 </div>
               </ListGroupItem>
-              <ListGroupItem action tag="a" href="#" className="list-group-item-accent-success list-group-item-divider">
-                <div><strong>#10 Startups.Garden</strong> Meetup</div>
-                <small className="text-muted mr-3"><i className="icon-calendar"></i>&nbsp; 1 - 3pm</small>
-                <small className="text-muted"><i className="icon-location-pin"></i>&nbsp; Palo Alto, CA</small>
-              </ListGroupItem>
-              <ListGroupItem action tag="a" href="#" className="list-group-item-accent-primary list-group-item-divider">
-                <div><strong>Team meeting</strong></div>
-                <small className="text-muted mr-3"><i className="icon-calendar"></i>&nbsp; 4 - 6pm</small>
-                <small className="text-muted"><i className="icon-home"></i>&nbsp; creativeLabs HQ</small>
+              <ListGroupItem action tag="a" href="#/protokoll" className="list-group-item-accent-danger list-group-item-divider">
+                <div><strong>Ergebnissdiskussion</strong></div>
+                <small className="text-muted mr-3"><i className="icon-calendar"></i>&nbsp; 08:00 - 16:00</small>
                 <div className="avatars-stack mt-2">
                   <div className="avatar avatar-xs">
                     <img src={'assets/img/avatars/2.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com" />
